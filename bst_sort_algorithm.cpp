@@ -36,6 +36,3 @@ void sort(T* arr, int size) //implemented for a simple array
         arr[j + 1] = value;
     }
 }
-int main()
-{
-}
