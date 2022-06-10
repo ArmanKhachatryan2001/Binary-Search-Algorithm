@@ -30,7 +30,6 @@ int size(iter begin, iter end)
     }
     return a;
 }
-
 template<typename iterator>
 iterator add(iterator it, int value)
 {
@@ -40,8 +39,6 @@ iterator add(iterator it, int value)
     }
     return it;
 }
-
-
 template<typename iterator, typename T>
 iterator BS(iterator begin, iterator end, T value, std::forward_iterator_tag) //binary search list
 {
@@ -75,7 +72,6 @@ iterator BS(iterator begin, iterator end, T value, std::forward_iterator_tag) //
          }
     }
     return --return_end;
-
 }
 template<typename iterator, typename T>
 iterator BS(iterator begin, iterator end, T value, std::random_access_iterator_tag) // binary search vector
@@ -99,7 +95,7 @@ iterator BS(iterator begin, iterator end, T value, std::random_access_iterator_t
     if(!half && *it != value) {
         break;
     }
-	}
+    }
     return --return_end;
 }
 template<typename IteratorType, typename T>
